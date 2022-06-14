@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+
+}
+body{
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding: 0;
+	background-color: #fff;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+}
+.logo a{
+	text-decoration: none;
+}
+.logo h1{
+	margin: 0;
+	font-size: 28px;
+	font-weight: 900;
+	color: #1EB0DE ;
+	margin-left: 80px;
+	padding: 8px 0px;
+}
+header ul{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+header li{
+	float: left;
+	list-style: none;
+	margin-right: 60px;
+}
+header li #nowpage{
+	color: #1EB0DE;
+}
+header li a{
+	text-decoration: none;
+	color: #212121;
+	font-size: 18px;
+}
+header li a:hover{
+	color: #1EB0DE;
+}
+
+.text{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.text h1{
+	font-size: 28px;
+	color: #1EB0DE;
+	width: 870px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+.text p{
+	font-size: 16px;
+	line-height: 32px;
+	width: 870px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: justify;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.title{
+	position: absolute;
+	top: 225%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+}
+.intro h2{
+	font-size: 14px;
+	font-weight: 500;
+	color: #808080;
+	margin: 0;
+}
+.intro h3{
+	font-size: 40px;
+	font-weight: 700;
+	color: #1EB0DE;
+	margin: 0;
+}
+.intro p{
+	font-size: 18px;
+	color: #626262;
+	margin-top: 16px;
+}
+
+.part{
+	margin-top: 180px;
+	display: flex;
+	justify-content: space-around;
+}
+.part h4{
+	font-size: 24px;
+	color: #1EB0DE;
+	font-weight: 700;
+}
+.part p{
+	text-align: justify;
+	font-size: 16px;
+	line-height: 32px;
+	width: 520px;
+}
+
+/*애니메이션*/
+.part{
+        opacity: 0;
+        transition: all 1s ease;
+     }
+.part-up{
+        transform: translate(0, 100px);
+     }
+.part.show{
+        opacity: 1;
+        transform: none;
+     }

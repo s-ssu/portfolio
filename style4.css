@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+
+}
+body{
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding: 0;
+	background-color: #fafafa;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+}
+.logo a{
+	text-decoration: none;
+}
+.logo h1{
+	margin: 0;
+	font-size: 28px;
+	font-weight: 900;
+	color: #1EB0DE ;
+	margin-left: 80px;
+	padding: 8px 0px;
+}
+header ul{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+header li{
+	float: left;
+	list-style: none;
+	margin-right: 60px;
+}
+header li #nowpage{
+	color: #1EB0DE;
+}
+header li a{
+	text-decoration: none;
+	color: #212121;
+	font-size: 18px;
+}
+header li a:hover{
+	color: #1EB0DE;
+}
+
+.question{
+	position: relative;
+	background: #e5e5e5;
+	border-radius: .8em;
+	display: inline-block;
+	padding: 32px 20px;
+	width: 240px;
+	margin-bottom: 12px;
+}
+.question:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 32px solid transparent;
+	border-right-color: #e5e5e5;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -16px;
+	margin-left: -32px;
+}
+
+.answer{
+	position: relative;
+	background: #1EB0DE;
+	border-radius: .8em;
+	display: inline-block;
+	padding: 32px 20px;
+	width: 240px;
+	color: #fafafa;
+}
+.answer:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 32px solid transparent;
+	border-left-color: #1EB0DE;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -16px;
+	margin-right: -32px;
+}
+.question3{
+	position: relative;
+	background: #e5e5e5;
+	border-radius: .8em;
+	display: inline-block;
+	padding: 32px 20px;
+	width: 240px;
+	margin-bottom: 12px;
+}
+.question3:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 32px solid transparent;
+	border-left-color: #e5e5e5;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -16px;
+	margin-right: -32px;
+}
+
+.answer3{
+	position: relative;
+	background: #1EB0DE;
+	border-radius: .8em;
+	display: inline-block;
+	padding: 32px 20px;
+	width: 240px;
+	color: #fafafa;
+}
+.answer3:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 32px solid transparent;
+	border-right-color: #1EB0DE;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -16px;
+	margin-left: -32px;
+}
+
+.part2 h2{
+	text-align: center;
+	font-size: 24px;
+	color: #1EB0DE;
+	margin: 0;
+}
+.skills{
+	text-align: center;
+	margin-top: 48px;
+}
+.skills img{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+content{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+.part1{
+	display: flex;
+	flex-direction: column;
+}
+.part2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.part3{
+	display: flex;
+	flex-direction: column;
+}
+.thing1{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+.thing2{
+	display: flex;
+	flex-direction: column;
+}
+.thing3{
+	display: flex;
+	flex-direction: column;
+}
+
+/*애니메이션*/
+.question, .question3{
+	animation: fadein 5s;
+	 -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.answer, .answer3{
+	animation: fadein 5s;
+	 -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.part2{
+	animation: fadein 2s;
+	 -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

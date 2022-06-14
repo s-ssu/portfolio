@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<header>
+		<div class="logo"><a href="index.html"><h1>SUIT IN</h1></a></div>
+		<ul>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</header>
+	
+	<div class="text"><h1>안녕하세요. UI/UX 디자이너가 되고싶은 김수진입니다.</h1>
+	</div>
+
+	<div class="profile profile-up">
+		<h2>About me</h2>
+		<div class="contact">
+			<div class="face"><img src="img/face.png" width="326px" 	height="326px"></div>		
+			<div class="site">
+				<a href="#"><h3>qnaqnaqna68@naver.com</h3></a>
+				<a href="#"><h3>naverblog_</h3></a>
+				<a href="#"><h3>@instagram_</h3></a>
+			</div>
+		</div>
+		<div class="profile-text">
+			<p>다재다능한 디자이너가 되고싶은 김수진입니다.<br>앱디자인과  편집디자인에 대한 관심이 높아 잘된 디자인 사례를 찾아가며 저를 더욱 성장하기 위해 노력합니다.<br>저는 일러스트, 포토샵, 피그마 사용에 능하고, 웹페이지 개발에 관심이 있어 HTML과 CSS 또한 사용 가능합니다.<br>인생의 길은 어디로든 열려있듯이 저 역시 다양한 분야를 경험하고 학습하며 다재다능한 디자이너가 되고자 합니다.</p>
+		</div>	
+		<div class="skill">
+			<img src="img/ai.png" width="100px" height="100px">
+			<img src="img/ps.png" width="100px" height="100px">
+			<img src="img/figma.png" width="100px" height="100px">
+		</div>	
+	</div>
+
+	<div class="product">
+		<div class="product-info">
+			<h3>APP</h3>
+			<h4>실시간 버스 정보 앱 : 버스와(BusWa)</h4>
+			<p>실시간으로 버스정보를 알려주는 앱으로,<br> 파란색을 메인색으로 정하여 사용자에게 신뢰를 주고자 하였습니다.</p>
+		</div>
+		<div class="buswa1 buswa1-up"><img src="img/mockup-buswa1.jpg" width="100%">
+		</div>
+
+		<div class="product-info">
+			<h3>APP</h3>
+			<h4>시드물(Sidmool) 리디자인</h4>
+			<p>기존 시드물의 옛날 디자인을 탈피하고자 리디자인을 진행하였습니다.<br>초록색을 메인색으로 정하여 전체적인 분위기를 차분한 느낌을 주고자 하였습니다.</p>
+		</div>
+		<div class="sidmool1 sidmool1-up"><img src="img/mockup-sidmool1.jpg" width="100%">
+		</div>
+	</div>
+
+</body>
+	<script>
+		const profileTriggerMargin = 300;
+      	const profileElementList = document.querySelectorAll('.profile');
+
+      const profileFunc = function() {
+        for (const element of profileElementList) {
+          if (!element.classList.contains('show')) {
+            if (window.innerHeight > element.getBoundingClientRect().top + profileTriggerMargin) {
+              element.classList.add('show');
+            }
+          }
+        }
+      }
+
+      window.addEventListener('load', profileFunc);
+      window.addEventListener('scroll', profileFunc);
+
+      const buswa1TriggerMargin = 300;
+      const buswa1ElementList = document.querySelectorAll('.buswa1');
+
+      const buswa1Func = function() {
+        for (const element of buswa1ElementList) {
+          if (!element.classList.contains('show')) {
+            if (window.innerHeight > element.getBoundingClientRect().top + buswa1TriggerMargin) {
+              element.classList.add('show');
+            }
+          }
+        }
+      }
+
+      window.addEventListener('load', buswa1Func);
+      window.addEventListener('scroll', buswa1Func);
+
+      const sidmool1TriggerMargin = 300;
+      const sidmool1ElementList = document.querySelectorAll('.sidmool1');
+
+      const sidmool1Func = function() {
+        for (const element of sidmool1ElementList) {
+          if (!element.classList.contains('show')) {
+            if (window.innerHeight > element.getBoundingClientRect().top + sidmool1TriggerMargin) {
+              element.classList.add('show');
+            }
+          }
+        }
+      }
+
+      window.addEventListener('load', sidmool1Func);
+      window.addEventListener('scroll', sidmool1Func);
+    </script>
+</html>
